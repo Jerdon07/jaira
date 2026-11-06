@@ -75,17 +75,12 @@ export const SECTIONS = {
   mother: { label: 'Frame · Mother', kicker: '06 · Family', title: 'Mother', lead: 'My mother.', photo: 'mother' }, // TODO: name + a few words
   father: { label: 'Frame · Father', kicker: '07 · Family', title: 'Father', lead: 'My father.', photo: 'father' }, // TODO: name + a few words
 
-  profile: {
-    label: 'Profile · Me', kicker: '08 · Profile', title: `${PROFILE.first} ${PROFILE.last}`, lead: PROFILE.headline, photo: 'profile',
-    badges: [acc('BSIT'), tag('University of the Cordilleras'), acc('ERP Track')],
-  },
-
   coffee: { label: 'Coffee · Take a sip', action: 'play' },
   lamp: { label: 'Lamp · Light / Dark', action: 'theme' },
 };
 
 // Chip order. Adding a section = add it above + a file in js/scene/objects/.
-export const ORDER = ['laptop', 'notebook', 'education', 'folders', 'phone', 'mother', 'father', 'profile', 'coffee', 'lamp'];
+export const ORDER = ['laptop', 'notebook', 'education', 'folders', 'phone', 'mother', 'father', 'coffee', 'lamp'];
 
 // Derived once: flip-book pages (cover + achievements, PER_PAGE each) so nothing is typed twice.
 const f = SECTIONS.folders, PER_PAGE = 3, n = f.items.length;
